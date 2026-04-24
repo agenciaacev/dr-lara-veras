@@ -31,7 +31,7 @@ export default function Sintomas() {
     <section
       id="condicoes"
       style={{
-        background: 'var(--off-white)',
+        background: 'var(--cream)',
         padding: 'clamp(80px, 10vw, 140px) 32px',
       }}
     >

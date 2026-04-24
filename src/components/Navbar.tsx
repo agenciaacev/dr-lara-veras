@@ -28,7 +28,7 @@ export default function Navbar() {
       <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 32px', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
         {/* Logo */}
         <div style={{ display: 'flex', flexDirection: 'column', lineHeight: 1 }}>
-          <span className="font-display" style={{ fontSize: '15px', fontWeight: 700, letterSpacing: '0.08em', color: 'var(--text-dark)' }}>
+          <span className="font-display" style={{ fontSize: '15px', fontWeight: 700, letterSpacing: '0.08em', color: scrolled ? 'var(--text-dark)' : '#fff', transition: 'color 0.4s ease' }}>
             DRA. LARA VERAS
           </span>
           <span style={{ fontSize: '10px', letterSpacing: '0.25em', color: 'var(--gold)', fontWeight: 500, marginTop: '2px' }}>
@@ -38,22 +38,25 @@ export default function Navbar() {
 
         {/* Desktop Links */}
         <div style={{ display: 'flex', gap: '36px', alignItems: 'center' }} className="hidden-mobile">
-          {['Sobre', 'Condições', 'Tratamentos', 'Contato'].map(item => (
+          {[
+            { label: 'Sinais', href: '#condicoes' },
+            { label: 'Sobre', href: '#sobre' },
+            { label: 'Cirurgia', href: '#tratamentos' },
+            { label: 'Contato', href: '#cta' },
+          ].map(item => (
             <a
-              key={item}
-              href={`#${item.toLowerCase()}`}
+              key={item.label}
+              href={item.href}
+              className={`nav-link ${scrolled ? 'nav-link--scrolled' : 'nav-link--top'}`}
               style={{
                 fontSize: '12px',
                 letterSpacing: '0.18em',
-                color: 'var(--text-mid)',
                 textDecoration: 'none',
                 fontWeight: 500,
-                transition: 'color 0.2s',
+                transition: 'color 0.4s ease',
               }}
-              onMouseEnter={e => (e.currentTarget.style.color = 'var(--gold)')}
-              onMouseLeave={e => (e.currentTarget.style.color = 'var(--text-mid)')}
             >
-              {item.toUpperCase()}
+              {item.label.toUpperCase()}
             </a>
           ))}
           <a
@@ -89,6 +92,9 @@ export default function Navbar() {
       </div>
 
       <style>{`
+        .nav-link--top { color: rgba(255,255,255,0.85); }
+        .nav-link--scrolled { color: var(--text-mid); }
+        .nav-link:hover { color: var(--gold) !important; }
         @media (max-width: 768px) {
           .hidden-mobile { display: none !important; }
           .mobile-menu-btn { display: block !important; }

@@ -1,63 +1,73 @@
+import drLaraJaleco from '../assets/dr-lara-jaleco.webp'
+import drLaraCirugia from '../assets/dr-lara-cirugia.jpg'
+
 export default function Sobre() {
   return (
     <section
       id="sobre"
       style={{
-        background: 'var(--cream)',
+        background: 'var(--off-white)',
         padding: 'clamp(80px, 10vw, 140px) 32px',
       }}
     >
       <div style={{ maxWidth: '1200px', margin: '0 auto', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '80px', alignItems: 'center' }}>
         
-        {/* Left — image placeholder with design */}
-        <div data-aos="fade-right" data-aos-duration="1000" style={{ position: 'relative' }}>
-          <div style={{
-            width: '100%',
-            aspectRatio: '3/4',
-            background: 'linear-gradient(160deg, var(--green-dark), #0f1f0f)',
+        {/* Left — overlapping photos */}
+        <div data-aos="fade-right" data-aos-duration="1000" style={{ position: 'relative', height: '620px' }}>
+
+          {/* Photo back — jaleco, deslocada para baixo-direita */}
+          <div className="sobre-foto-tras" style={{
+            position: 'absolute',
+            bottom: 0, right: '-20px',
+            width: '58%',
+            height: '65%',
             borderRadius: '2px',
-            position: 'relative',
             overflow: 'hidden',
+            boxShadow: '8px 8px 32px rgba(0,0,0,0.15)',
+            border: '1px solid rgba(184,150,90,0.2)',
           }}>
-            {/* Decorative pattern */}
-            <div style={{
-              position: 'absolute', inset: 0,
-              backgroundImage: `radial-gradient(circle at 30% 70%, rgba(184,150,90,0.15) 0%, transparent 50%)`,
-            }} />
-            <div style={{
-              position: 'absolute', bottom: '40px', left: '40px', right: '40px',
-              borderTop: '1px solid rgba(184,150,90,0.3)',
-              paddingTop: '24px',
-            }}>
-              <p className="font-display" style={{ color: 'rgba(255,255,255,0.9)', fontSize: '22px', fontStyle: 'italic' }}>
-                Dra. Lara Veras
-              </p>
-              <p style={{ color: 'var(--gold)', fontSize: '11px', letterSpacing: '0.2em', marginTop: '6px' }}>
-                COLOPROCTOLOGISTA
-              </p>
-            </div>
+            <img
+              src={drLaraCirugia}
+              alt="Dra. Lara Veras"
+              style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'top center' }}
+            />
           </div>
 
-          {/* Floating badge */}
-          <div style={{
-            position: 'absolute', top: '-20px', right: '-20px',
-            background: 'var(--gold)',
-            color: '#fff',
-            padding: '20px',
+          {/* Photo front — cirurgia, deslocada para cima-esquerda */}
+          <div className="sobre-foto-frente" style={{
+            position: 'absolute',
+            top: 0, left: '-20px',
+            width: '58%',
+            height: '70%',
             borderRadius: '2px',
-            textAlign: 'center',
-            boxShadow: '0 8px 32px rgba(139,110,58,0.3)',
+            overflow: 'hidden',
+            boxShadow: '12px 12px 40px rgba(0,0,0,0.2)',
+            border: '2px solid #fff',
+            zIndex: 2,
           }}>
-            <div className="font-display" style={{ fontSize: '28px', fontWeight: 700, lineHeight: 1 }}>+</div>
-            <div style={{ fontSize: '9px', letterSpacing: '0.2em', marginTop: '4px' }}>ROBÓTICA</div>
+            <img
+              src={drLaraJaleco}
+              alt="Dra. Lara Veras em cirurgia"
+              style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'top center' }}
+            />
           </div>
 
           {/* Gold corner accent */}
           <div style={{
             position: 'absolute', bottom: '-16px', left: '-16px',
-            width: '80px', height: '80px',
+            width: '72px', height: '72px',
             border: '2px solid var(--gold)',
-            opacity: 0.4,
+            opacity: 0.35,
+            zIndex: 0,
+          }} />
+
+          {/* Gold line accent top-right */}
+          <div style={{
+            position: 'absolute', top: '-12px', right: '-12px',
+            width: '72px', height: '72px',
+            border: '2px solid var(--gold)',
+            opacity: 0.2,
+            zIndex: 0,
           }} />
         </div>
 
@@ -114,6 +124,8 @@ export default function Sobre() {
       <style>{`
         @media (max-width: 768px) {
           #sobre > div { grid-template-columns: 1fr !important; gap: 48px !important; }
+          .sobre-foto-frente { width: 62% !important; }
+          .sobre-foto-tras { width: 62% !important; }
         }
       `}</style>
     </section>
