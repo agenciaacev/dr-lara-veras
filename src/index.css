@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500;600&display=swap');
+@import 'aos/dist/aos.css';
+@import "tailwindcss";
+
+:root {
+  --cream: #F5EFE6;
+  --cream-dark: #EDE4D6;
+  --gold: #B8965A;
+  --gold-light: #D4AC6E;
+  --gold-dark: #8B6E3A;
+  --green-dark: #1a2e1a;
+  --green-med: #2d4a2d;
+  --off-white: #FDFAF6;
+  --text-dark: #2A1F14;
+  --text-mid: #5C4A32;
+  --text-light: #8B7355;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+  background-color: var(--off-white);
+  color: var(--text-dark);
+  font-family: 'DM Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.font-display { font-family: 'Playfair Display', serif; }
+.font-cormorant { font-family: 'Cormorant Garamond', serif; }
+
+.text-gold-gradient {
+  background: linear-gradient(135deg, var(--gold-light), var(--gold), var(--gold-dark));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--cream); }
+::-webkit-scrollbar-thumb { background: var(--gold); border-radius: 3px; }
