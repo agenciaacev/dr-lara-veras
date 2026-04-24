@@ -52,7 +52,7 @@ export default function Robotica() {
               </h2>
 
               <p style={{ fontSize: '16px', color: 'var(--text-mid)', lineHeight: 1.8, marginBottom: '40px' }}>
-                Tecnologia de ponta aplicada para oferecer o melhor resultado cirúrgico possível — com maior segurança para a paciente e resultados superiores para condições complexas do assoalho pélvico e colorretal.
+                Tecnologia de ponta aplicada para oferecer o melhor resultado cirúrgico possível com maior segurança para a paciente e resultados superiores para condições complexas do assoalho pélvico e colorretal.
               </p>
             </div>
 

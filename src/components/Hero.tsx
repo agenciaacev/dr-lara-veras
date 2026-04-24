@@ -78,7 +78,7 @@ export default function Hero() {
               lineHeight: 1.6,
               fontStyle: 'italic',
             }}>
-              Existe tratamento eficaz — e, em muitos casos, a solução é cirúrgica.
+              Existe tratamento eficaz e, em muitos casos, a solução é cirúrgica.
             </p>
           </div>
 

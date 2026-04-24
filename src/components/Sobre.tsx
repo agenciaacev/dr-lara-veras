@@ -97,7 +97,7 @@ export default function Sobre() {
             </p>
 
             <p style={{ fontSize: '16px', color: 'var(--text-mid)', lineHeight: 1.8, marginBottom: '40px' }}>
-              Sua prática inclui cirurgia robótica — tecnologia de ponta que permite maior precisão, menor trauma e recuperação mais rápida para condições que afetam diretamente a qualidade de vida das pacientes.
+              Sua prática inclui cirurgia robótica tecnologia de ponta que permite maior precisão, menor trauma e recuperação mais rápida para condições que afetam diretamente a qualidade de vida das pacientes.
             </p>
           </div>
 
