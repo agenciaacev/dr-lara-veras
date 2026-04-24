@@ -6,7 +6,7 @@ export default function Hero() {
       id="hero"
       className="hero-section"
       style={{
-        height: '100vh',
+        minHeight: '100vh',
         background: 'linear-gradient(135deg, var(--green-dark) 0%, #0f1f0f 50%, #1a2e1a 100%)',
         display: 'flex',
         alignItems: 'stretch',
@@ -43,7 +43,7 @@ export default function Hero() {
       >
 
         {/* Left: content */}
-        <div className="hero-left-col" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', padding: '120px 0 80px' }}>
+        <div className="hero-left-col" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', padding: 'clamp(60px, 10vh, 120px) 0 clamp(40px, 6vh, 80px)' }}>
           {/* Eyebrow */}
           <div data-aos="fade-up" data-aos-duration="800" style={{ display: 'flex', alignItems: 'center', gap: '16px', marginBottom: '36px' }}>
             <div style={{ width: '40px', height: '1px', background: 'var(--gold)' }} />
