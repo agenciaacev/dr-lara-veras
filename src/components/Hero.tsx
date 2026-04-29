@@ -83,7 +83,7 @@ export default function Hero() {
           {/* CTA buttons */}
           <div data-aos="fade-up" data-aos-duration="900" data-aos-delay="300" style={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
             <a
-              href="https://wa.me/5585999999999"
+              href="https://api.whatsapp.com/send/?phone=5585996508580&text=Ol%C3%A1%2C+gostaria+de+agendar+uma+avalia%C3%A7%C3%A3o+com+a+Dra.+Lara+Veras&type=phone_number&app_absent=0"
               target="_blank"
               rel="noopener noreferrer"
               style={{
@@ -94,7 +94,7 @@ export default function Hero() {
                 letterSpacing: '0.2em',
                 fontWeight: 600,
                 textDecoration: 'none',
-                borderRadius: '2px',
+                borderRadius: '50px',
                 transition: 'all 0.3s',
                 display: 'inline-flex',
                 alignItems: 'center',
@@ -112,10 +112,11 @@ export default function Hero() {
 
           {/* Credentials row */}
           <div data-aos="fade-up" data-aos-duration="900" data-aos-delay="400" style={{
-            display: 'flex', gap: '32px', marginTop: '64px', flexWrap: 'wrap',
+            display: 'flex', gap: '20px', marginTop: '64px', flexWrap: 'wrap',
             paddingTop: '40px', borderTop: '1px solid rgba(255,255,255,0.08)',
           }}>
             {[
+              { label: 'Titular da Sociedade Brasileira de Coloproctologia' },
               { label: 'Professora da UFC' },
               { label: 'Presidente da SOBRACIL' },
               { label: 'CRM 13899' },
@@ -187,17 +188,6 @@ export default function Hero() {
           </div>
         </div>
       </div>
-
-      {/* Scroll indicator */}
-      <div style={{
-        position: 'absolute', bottom: '36px', left: '50%', transform: 'translateX(-50%)',
-        display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '8px',
-        animation: 'bounce 2s infinite',
-      }}>
-        <span style={{ fontSize: '9px', letterSpacing: '0.25em', color: 'rgba(255,255,255,0.3)' }}>SCROLL</span>
-        <div style={{ width: '1px', height: '40px', background: 'linear-gradient(180deg, rgba(0,124,72,0.6), transparent)' }} />
-      </div>
-
       <style>{`
         @keyframes bounce {
           0%, 100% { transform: translateX(-50%) translateY(0); }

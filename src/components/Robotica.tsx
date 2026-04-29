@@ -67,7 +67,7 @@ export default function Robotica() {
                   letterSpacing: '0.2em',
                   fontWeight: 600,
                   textDecoration: 'none',
-                  borderRadius: '2px',
+                  borderRadius: '50px',
                   transition: 'all 0.3s',
                   display: 'inline-block',
                 }}

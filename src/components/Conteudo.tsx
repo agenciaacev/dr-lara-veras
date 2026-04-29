@@ -49,15 +49,15 @@ A indicação cirúrgica correta faz toda a diferença. A Dra. Lara avalia cada 
 
 Doença de Crohn: pode afetar qualquer parte do trato digestivo, da boca ao ânus. Causa dor abdominal, diarreia, perda de peso, fadiga e, em muitos casos, manifestações perianais como fístulas e abscessos.
 
-Retocolite ulcerativa: afeta exclusivamente o cólon e o reto, causando inflamação com úlceras na mucosa intestinal. Os principais sintomas são diarreia com sangue, urgência evacuatória e dor abdominal. Nos casos refratários ao tratamento clínico, a cirurgia pode ser curativa.
+Retocolite ulcerativa: afeta exclusivamente o cólon e o reto, causando inflamação com úlceras na mucosa intestinal. Os principais sintomas são diarreia com sangue, urgência evacuatória e dor abdominal.
 
 Quando suspeitar de doença inflamatória intestinal: diarreia crônica com ou sem sangue por mais de quatro semanas, dor abdominal recorrente sem causa definida, perda de peso sem explicação, fístulas ou abscessos perianais de repetição e histórico familiar de Crohn ou retocolite são sinais que pedem avaliação especializada.
 
 O diagnóstico precoce e o acompanhamento correto fazem diferença real na progressão da doença e na qualidade de vida do paciente.`,
   },
   {
-    title: 'Ultrassonografia endoanal: o exame que enxerga o que outros não conseguem',
-    content: `A ultrassonografia endoanal é um exame de imagem realizado com uma sonda de pequeno diâmetro introduzida no canal anal. Ela permite visualizar com precisão as estruturas internas do ânus, do esfíncter e do assoalho pélvico.
+    title: 'Ultrassonografia endoanal 3D: o exame que enxerga o que outros não conseguem',
+    content: `A ultrassonografia endoanal 3D é um exame de imagem realizado com uma sonda de pequeno diâmetro introduzida no canal anal. Ela permite visualizar com precisão as estruturas internas do ânus, do esfíncter e do assoalho pélvico.
 
 Para que serve: avaliar lesões no esfíncter anal após partos ou cirurgias, identificar a localização de fístulas anais complexas, investigar abscessos perianais, avaliar tumores do canal anal e do reto baixo, auxiliar no diagnóstico de incontinência fecal e orientar o planejamento cirúrgico com mais precisão.
 

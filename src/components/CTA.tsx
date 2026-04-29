@@ -74,7 +74,7 @@ export default function CTA() {
 
             <div style={{ display: 'flex', flexDirection: 'column', gap: '16px', alignItems: 'center' }}>
               <a
-                href="https://wa.me/5585999999999"
+                href="https://api.whatsapp.com/send/?phone=5585996508580&text=Ol%C3%A1%2C+gostaria+de+agendar+uma+avalia%C3%A7%C3%A3o+com+a+Dra.+Lara+Veras&type=phone_number&app_absent=0"
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{
@@ -85,7 +85,7 @@ export default function CTA() {
                   letterSpacing: '0.2em',
                   fontWeight: 700,
                   textDecoration: 'none',
-                  borderRadius: '2px',
+                  borderRadius: '50px',
                   transition: 'all 0.3s',
                   display: 'inline-flex',
                   alignItems: 'center',

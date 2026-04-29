@@ -78,7 +78,7 @@ export default function Navbar() {
               letterSpacing: '0.18em',
               fontWeight: 600,
               textDecoration: 'none',
-              borderRadius: '2px',
+              borderRadius: '50px',
               transition: 'background 0.2s',
             }}
             onMouseEnter={e => (e.currentTarget.style.background = 'var(--gold-dark)')}
@@ -142,7 +142,7 @@ export default function Navbar() {
             letterSpacing: '0.18em',
             fontWeight: 600,
             textDecoration: 'none',
-            borderRadius: '2px',
+            borderRadius: '50px',
             textAlign: 'center',
           }}
         >
