@@ -30,7 +30,7 @@ export default function Sobre() {
             borderRadius: '2px',
             overflow: 'hidden',
             boxShadow: '8px 8px 32px rgba(0,0,0,0.15)',
-            border: '1px solid rgba(184,150,90,0.2)',
+            border: '1px solid rgba(0,124,72,0.2)',
           }}>
             <img
               src={drLaraCirugia}
@@ -108,8 +108,8 @@ export default function Sobre() {
             {selos.map(item => (
               <div key={item.label} style={{
                 display: 'flex', alignItems: 'center', gap: '12px',
-                padding: '16px', background: 'rgba(184,150,90,0.06)',
-                border: '1px solid rgba(184,150,90,0.15)', borderRadius: '2px',
+                padding: '16px', background: 'rgba(0,124,72,0.06)',
+                border: '1px solid rgba(0,124,72,0.15)', borderRadius: '2px',
               }}>
                 <span style={{ color: 'var(--gold)', fontSize: '14px' }}>{item.icon}</span>
                 <span style={{ fontSize: '13px', color: 'var(--text-dark)', fontWeight: 500 }}>{item.label}</span>

@@ -58,7 +58,7 @@ export default function Sintomas() {
               data-aos-delay={i * 60}
               style={{
                 background: '#fff',
-                border: '1px solid rgba(184,150,90,0.15)',
+                border: '1px solid rgba(0,124,72,0.15)',
                 borderRadius: '2px',
                 padding: '20px 24px',
                 display: 'flex',
@@ -69,13 +69,13 @@ export default function Sintomas() {
               }}
               onMouseEnter={e => {
                 const el = e.currentTarget as HTMLDivElement
-                el.style.borderColor = 'rgba(184,150,90,0.5)'
+                el.style.borderColor = 'rgba(0,124,72,0.5)'
                 el.style.transform = 'translateX(4px)'
-                el.style.boxShadow = '0 4px 20px rgba(184,150,90,0.08)'
+                el.style.boxShadow = '0 4px 20px rgba(0,124,72,0.08)'
               }}
               onMouseLeave={e => {
                 const el = e.currentTarget as HTMLDivElement
-                el.style.borderColor = 'rgba(184,150,90,0.15)'
+                el.style.borderColor = 'rgba(0,124,72,0.15)'
                 el.style.transform = 'translateX(0)'
                 el.style.boxShadow = 'none'
               }}
@@ -92,7 +92,7 @@ export default function Sintomas() {
         {/* Bottom CTA */}
         <div data-aos="fade-up" data-aos-duration="800" data-aos-delay="200" className="sintomas-cta" style={{
           marginTop: '60px',
-          background: 'linear-gradient(135deg, var(--green-dark), #0f1f0f)',
+          background: 'linear-gradient(135deg, var(--green-dark), #031a0d)',
           borderRadius: '2px',
           padding: '48px 40px',
           display: 'flex',

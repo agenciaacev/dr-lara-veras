@@ -7,7 +7,7 @@ export default function Hero() {
       className="hero-section"
       style={{
         minHeight: '100vh',
-        background: 'linear-gradient(135deg, var(--green-dark) 0%, #0f1f0f 50%, #1a2e1a 100%)',
+        background: 'linear-gradient(135deg, var(--green-dark) 0%, #031a0d 50%, #051f12 100%)',
         display: 'flex',
         alignItems: 'stretch',
         position: 'relative',
@@ -17,20 +17,20 @@ export default function Hero() {
       {/* Background texture */}
       <div style={{
         position: 'absolute', inset: 0,
-        backgroundImage: `radial-gradient(ellipse at 80% 50%, rgba(184,150,90,0.08) 0%, transparent 60%),
-                          radial-gradient(ellipse at 20% 80%, rgba(184,150,90,0.05) 0%, transparent 50%)`,
+        backgroundImage: `radial-gradient(ellipse at 80% 50%, rgba(0,124,72,0.08) 0%, transparent 60%),
+                          radial-gradient(ellipse at 20% 80%, rgba(0,124,72,0.05) 0%, transparent 50%)`,
       }} />
 
       {/* Decorative lines */}
       <div style={{
         position: 'absolute', top: '20%', right: '8%',
         width: '1px', height: '200px',
-        background: 'linear-gradient(180deg, transparent, rgba(184,150,90,0.4), transparent)',
+        background: 'linear-gradient(180deg, transparent, rgba(0,124,72,0.4), transparent)',
       }} />
       <div style={{
         position: 'absolute', bottom: '20%', left: '5%',
         width: '80px', height: '1px',
-        background: 'linear-gradient(90deg, transparent, rgba(184,150,90,0.4), transparent)',
+        background: 'linear-gradient(90deg, transparent, rgba(0,124,72,0.4), transparent)',
       }} />
 
       <div style={{
@@ -156,7 +156,7 @@ export default function Hero() {
             position: 'absolute',
             top: '32px', right: '-8px',
             width: 'calc(100% - 16px)', height: 'calc(100% - 64px)',
-            border: '1px solid rgba(184,150,90,0.3)',
+            border: '1px solid rgba(0,124,72,0.3)',
             pointerEvents: 'none',
             zIndex: 2,
           }} />
@@ -164,16 +164,16 @@ export default function Hero() {
           <div style={{
             position: 'absolute',
             inset: 0,
-            background: 'linear-gradient(90deg, rgba(10,20,10,0.6) 0%, transparent 30%)',
+            background: 'linear-gradient(90deg, rgba(3,26,13,0.6) 0%, transparent 30%)',
             zIndex: 1,
           }} />
           {/* Name badge */}
           <div style={{
             position: 'absolute',
             bottom: '40px', left: '24px',
-            background: 'rgba(15,31,15,0.92)',
+            background: 'rgba(5,31,18,0.92)',
             backdropFilter: 'blur(12px)',
-            border: '1px solid rgba(184,150,90,0.25)',
+            border: '1px solid rgba(0,124,72,0.25)',
             padding: '16px 24px',
             borderRadius: '2px',
             zIndex: 3,
@@ -195,7 +195,7 @@ export default function Hero() {
         animation: 'bounce 2s infinite',
       }}>
         <span style={{ fontSize: '9px', letterSpacing: '0.25em', color: 'rgba(255,255,255,0.3)' }}>SCROLL</span>
-        <div style={{ width: '1px', height: '40px', background: 'linear-gradient(180deg, rgba(184,150,90,0.6), transparent)' }} />
+        <div style={{ width: '1px', height: '40px', background: 'linear-gradient(180deg, rgba(0,124,72,0.6), transparent)' }} />
       </div>
 
       <style>{`

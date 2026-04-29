@@ -36,7 +36,7 @@ export default function ComoFunciona() {
         position: 'absolute', right: '-100px', top: '50%', transform: 'translateY(-50%)',
         width: '500px', height: '500px',
         borderRadius: '50%',
-        background: 'radial-gradient(circle, rgba(184,150,90,0.06) 0%, transparent 70%)',
+        background: 'radial-gradient(circle, rgba(0,124,72,0.06) 0%, transparent 70%)',
         pointerEvents: 'none',
       }} />
 
@@ -75,7 +75,7 @@ export default function ComoFunciona() {
               data-aos-delay={i * 100}
               style={{
                 background: '#fff',
-                border: '1px solid rgba(184,150,90,0.12)',
+                border: '1px solid rgba(0,124,72,0.12)',
                 borderRadius: '2px',
                 padding: '32px 28px',
                 position: 'relative',
@@ -83,13 +83,13 @@ export default function ComoFunciona() {
                 transition: 'all 0.3s',
                 cursor: 'default',
               }}
-              onMouseEnter={e => { (e.currentTarget as HTMLDivElement).style.borderColor = 'rgba(184,150,90,0.4)'; (e.currentTarget as HTMLDivElement).style.transform = 'translateY(-4px)'; }}
-              onMouseLeave={e => { (e.currentTarget as HTMLDivElement).style.borderColor = 'rgba(184,150,90,0.12)'; (e.currentTarget as HTMLDivElement).style.transform = 'translateY(0)'; }}
+              onMouseEnter={e => { (e.currentTarget as HTMLDivElement).style.borderColor = 'rgba(0,124,72,0.4)'; (e.currentTarget as HTMLDivElement).style.transform = 'translateY(-4px)'; }}
+              onMouseLeave={e => { (e.currentTarget as HTMLDivElement).style.borderColor = 'rgba(0,124,72,0.12)'; (e.currentTarget as HTMLDivElement).style.transform = 'translateY(0)'; }}
             >
               <span className="font-display" style={{
                 fontSize: '52px',
                 fontWeight: 900,
-                color: 'rgba(184,150,90,0.12)',
+                color: 'rgba(0,124,72,0.12)',
                 lineHeight: 1,
                 display: 'block',
                 marginBottom: '20px',
@@ -131,7 +131,7 @@ export default function ComoFunciona() {
               display: 'inline-flex',
               alignItems: 'center',
               gap: '12px',
-              boxShadow: '0 8px 32px rgba(184,150,90,0.25)',
+              boxShadow: '0 8px 32px rgba(0,124,72,0.25)',
             }}
             onMouseEnter={e => { e.currentTarget.style.background = 'var(--gold-light)'; e.currentTarget.style.transform = 'translateY(-3px)'; }}
             onMouseLeave={e => { e.currentTarget.style.background = 'var(--gold)'; e.currentTarget.style.transform = 'translateY(0)'; }}

@@ -21,7 +21,7 @@ export default function Robotica() {
         position: 'absolute', right: '-100px', top: '50%', transform: 'translateY(-50%)',
         width: '500px', height: '500px',
         borderRadius: '50%',
-        background: 'radial-gradient(circle, rgba(184,150,90,0.06) 0%, transparent 70%)',
+        background: 'radial-gradient(circle, rgba(0,124,72,0.06) 0%, transparent 70%)',
         pointerEvents: 'none',
       }} />
 
@@ -93,18 +93,18 @@ export default function Robotica() {
                   alignItems: 'flex-start',
                   padding: '24px',
                   background: '#fff',
-                  border: '1px solid rgba(184,150,90,0.12)',
+                  border: '1px solid rgba(0,124,72,0.12)',
                   borderRadius: '2px',
                   transition: 'all 0.3s',
                   cursor: 'default',
                 }}
-                onMouseEnter={e => { (e.currentTarget as HTMLDivElement).style.borderColor = 'rgba(184,150,90,0.4)'; }}
-                onMouseLeave={e => { (e.currentTarget as HTMLDivElement).style.borderColor = 'rgba(184,150,90,0.12)'; }}
+                onMouseEnter={e => { (e.currentTarget as HTMLDivElement).style.borderColor = 'rgba(0,124,72,0.4)'; }}
+                onMouseLeave={e => { (e.currentTarget as HTMLDivElement).style.borderColor = 'rgba(0,124,72,0.12)'; }}
               >
                 <span className="font-display" style={{
                   fontSize: '32px',
                   fontWeight: 900,
-                  color: 'rgba(184,150,90,0.2)',
+                  color: 'rgba(0,124,72,0.2)',
                   lineHeight: 1,
                   flexShrink: 0,
                 }}>

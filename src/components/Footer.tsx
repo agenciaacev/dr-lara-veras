@@ -1,9 +1,9 @@
 export default function Footer() {
   return (
     <footer style={{
-      background: '#0a150a',
+      background: '#031a0d',
       padding: '48px 32px',
-      borderTop: '1px solid rgba(184,150,90,0.15)',
+      borderTop: '1px solid rgba(0,124,72,0.15)',
     }}>
       <div style={{
         maxWidth: '1200px', margin: '0 auto',

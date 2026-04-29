@@ -31,9 +31,9 @@ export default function Navbar() {
         right: 0,
         zIndex: 100,
         transition: 'background 0.4s ease, border 0.4s ease, backdrop-filter 0.4s ease',
-        background: scrolled ? 'rgba(253,250,246,0.97)' : 'transparent',
+        background: scrolled ? 'rgba(232,242,238,0.97)' : 'transparent',
         backdropFilter: scrolled ? 'blur(12px)' : 'none',
-        borderBottom: scrolled ? '1px solid rgba(184,150,90,0.2)' : 'none',
+        borderBottom: scrolled ? '1px solid rgba(0,124,72,0.2)' : 'none',
       }}
     >
       <div style={{ maxWidth: '1200px', margin: '0 auto', padding: scrolled ? '14px 32px' : '24px 32px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', transition: 'padding 0.4s ease' }}>
@@ -103,9 +103,9 @@ export default function Navbar() {
       {/* Mobile menu panel */}
       <div className={`mobile-panel${menuOpen ? ' mobile-panel--open' : ''}`} style={{
         flexDirection: 'column',
-        background: 'rgba(253,250,246,0.98)',
+        background: 'rgba(232,242,238,0.98)',
         backdropFilter: 'blur(12px)',
-        borderTop: '1px solid rgba(184,150,90,0.15)',
+        borderTop: '1px solid rgba(0,124,72,0.15)',
         padding: '24px 32px 32px',
         gap: '4px',
       }}>
@@ -119,7 +119,7 @@ export default function Navbar() {
               color: 'var(--text-dark)',
               fontWeight: 500,
               padding: '14px 0',
-              borderBottom: '1px solid rgba(184,150,90,0.1)',
+              borderBottom: '1px solid rgba(0,124,72,0.1)',
               background: 'none',
               border: 'none',
               cursor: 'pointer',

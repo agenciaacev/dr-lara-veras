@@ -69,7 +69,7 @@ export default function FAQ() {
               style={{
                 background: '#fff',
                 border: '1px solid',
-                borderColor: open === i ? 'rgba(184,150,90,0.4)' : 'rgba(184,150,90,0.15)',
+                borderColor: open === i ? 'rgba(0,124,72,0.4)' : 'rgba(0,124,72,0.15)',
                 borderRadius: '2px',
                 overflow: 'hidden',
                 transition: 'border-color 0.3s',
@@ -117,7 +117,7 @@ export default function FAQ() {
               }}>
                 <div style={{
                   padding: '0 28px 22px',
-                  borderTop: '1px solid rgba(184,150,90,0.1)',
+                  borderTop: '1px solid rgba(0,124,72,0.1)',
                   paddingTop: '18px',
                 }}>
                   <p style={{

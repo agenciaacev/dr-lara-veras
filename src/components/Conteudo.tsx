@@ -112,11 +112,11 @@ export default function Conteudo() {
               data-aos-delay={i * 60}
               style={{
                 background: '#fff',
-                border: '1px solid rgba(184,150,90,0.15)',
+                border: '1px solid rgba(0,124,72,0.15)',
                 borderRadius: '2px',
                 overflow: 'hidden',
                 transition: 'border-color 0.3s',
-                borderColor: open === i ? 'rgba(184,150,90,0.4)' : 'rgba(184,150,90,0.15)',
+                borderColor: open === i ? 'rgba(0,124,72,0.4)' : 'rgba(0,124,72,0.15)',
               }}
             >
               <button
@@ -162,7 +162,7 @@ export default function Conteudo() {
                 <div style={{ overflow: 'hidden' }}>
                 <div style={{
                   padding: '0 28px 28px',
-                  borderTop: '1px solid rgba(184,150,90,0.12)',
+                  borderTop: '1px solid rgba(0,124,72,0.12)',
                   paddingTop: '20px',
                 }}>
                   {item.content.split('\n\n').map((para, pi) => (
