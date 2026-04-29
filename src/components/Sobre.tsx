@@ -2,6 +2,13 @@ import drLaraJaleco from '../assets/dr-lara-jaleco.webp'
 import drLaraCirugia from '../assets/dr-lara-cirugia.jpg'
 
 export default function Sobre() {
+  const selos = [
+    { icon: '◈', label: 'Professora da UFC' },
+    { icon: '◈', label: 'Presidente da SOBRACIL' },
+    { icon: '◈', label: 'Cirurgia Minimamente Invasiva' },
+    { icon: '◈', label: 'Baseado em Evidências' },
+  ]
+
   return (
     <section
       id="sobre"
@@ -15,7 +22,6 @@ export default function Sobre() {
         {/* Left — overlapping photos */}
         <div data-aos="fade-right" data-aos-duration="1000" style={{ position: 'relative', height: '620px' }}>
 
-          {/* Photo back — jaleco, deslocada para baixo-direita */}
           <div className="sobre-foto-tras" style={{
             position: 'absolute',
             bottom: 0, right: '-20px',
@@ -28,12 +34,11 @@ export default function Sobre() {
           }}>
             <img
               src={drLaraCirugia}
-              alt="Dra. Lara Veras"
+              alt="Dra. Lara Veras em cirurgia"
               style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'top center' }}
             />
           </div>
 
-          {/* Photo front — cirurgia, deslocada para cima-esquerda */}
           <div className="sobre-foto-frente" style={{
             position: 'absolute',
             top: 0, left: '-20px',
@@ -47,12 +52,11 @@ export default function Sobre() {
           }}>
             <img
               src={drLaraJaleco}
-              alt="Dra. Lara Veras em cirurgia"
+              alt="Dra. Lara Veras"
               style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'top center' }}
             />
           </div>
 
-          {/* Gold corner accent */}
           <div style={{
             position: 'absolute', bottom: '-16px', left: '-16px',
             width: '72px', height: '72px',
@@ -61,7 +65,6 @@ export default function Sobre() {
             zIndex: 0,
           }} />
 
-          {/* Gold line accent top-right */}
           <div style={{
             position: 'absolute', top: '-12px', right: '-12px',
             width: '72px', height: '72px',
@@ -77,7 +80,7 @@ export default function Sobre() {
             <div style={{ display: 'flex', alignItems: 'center', gap: '16px', marginBottom: '24px' }}>
               <div style={{ width: '40px', height: '1px', background: 'var(--gold)' }} />
               <span style={{ fontSize: '11px', letterSpacing: '0.3em', color: 'var(--gold)', fontWeight: 500 }}>
-                ESPECIALISTA
+                QUEM VAI CUIDAR DE VOCÊ
               </span>
             </div>
 
@@ -88,26 +91,21 @@ export default function Sobre() {
               lineHeight: 1.15,
               marginBottom: '28px',
             }}>
-              Diagnóstico preciso,{' '}
-              <span style={{ fontStyle: 'italic', color: 'var(--gold)' }}>tratamento resolutivo.</span>
+              Domínio técnico{' '}
+              <span style={{ fontStyle: 'italic', color: 'var(--gold)' }}>e escuta real.</span>
             </h2>
 
             <p style={{ fontSize: '16px', color: 'var(--text-mid)', lineHeight: 1.8, marginBottom: '20px' }}>
-              A Dra. Lara Veras é especialista em Coloproctologia e doenças do assoalho pélvico, com atuação focada em diagnóstico preciso e tratamento resolutivo.
+              A Dra. Lara Veras é coloproctologista com especialização em assoalho pélvico e técnicas minimamente invasivas. Professora ativa da Universidade Federal do Ceará, forma os especialistas da próxima geração.
             </p>
 
             <p style={{ fontSize: '16px', color: 'var(--text-mid)', lineHeight: 1.8, marginBottom: '40px' }}>
-              Sua prática inclui cirurgia robótica tecnologia de ponta que permite maior precisão, menor trauma e recuperação mais rápida para condições que afetam diretamente a qualidade de vida das pacientes.
+              Como presidente da SOBRACIL, representa os maiores nomes da cirurgia laparoscópica e robótica do Brasil. Mais do que títulos, o que define seu atendimento é a combinação entre domínio técnico cirúrgico e uma escuta que muitos pacientes descrevem como a primeira vez em que se sentiram realmente compreendidos.
             </p>
           </div>
 
-          <div data-aos="fade-left" data-aos-duration="900" data-aos-delay="150" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px' }}>
-            {[
-              { icon: '◈', label: 'Coloproctologia' },
-              { icon: '◈', label: 'Assoalho Pélvico' },
-              { icon: '◈', label: 'Cirurgia Robótica' },
-              { icon: '◈', label: 'Endometriose' },
-            ].map(item => (
+          <div data-aos="fade-left" data-aos-duration="900" data-aos-delay="150" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px' }}>
+            {selos.map(item => (
               <div key={item.label} style={{
                 display: 'flex', alignItems: 'center', gap: '12px',
                 padding: '16px', background: 'rgba(184,150,90,0.06)',

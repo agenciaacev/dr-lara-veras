@@ -3,9 +3,12 @@ import AOS from 'aos'
 
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
-import Sobre from './components/Sobre'
 import Sintomas from './components/Sintomas'
-import Robotica from './components/Robotica'
+import Sobre from './components/Sobre'
+import Servicos from './components/Servicos'
+import Conteudo from './components/Conteudo'
+import ComoFunciona from './components/ComoFunciona'
+import FAQ from './components/FAQ'
 import CTA from './components/CTA'
 import Footer from './components/Footer'
 
@@ -24,7 +27,10 @@ export default function App() {
       <Hero />
       <Sintomas />
       <Sobre />
-      <Robotica />
+      <Servicos />
+      <Conteudo />
+      <ComoFunciona />
+      <FAQ />
       <CTA />
       <Footer />
     </div>

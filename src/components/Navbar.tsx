@@ -1,10 +1,10 @@
 import { useState, useEffect } from 'react'
 
 const NAV_LINKS = [
-  { label: 'Sinais', id: 'condicoes' },
+  { label: 'Sintomas', id: 'condicoes' },
   { label: 'Sobre', id: 'sobre' },
-  { label: 'Cirurgia', id: 'tratamentos' },
-  { label: 'Contato', id: 'cta' },
+  { label: 'Serviços', id: 'servicos' },
+  { label: 'FAQ', id: 'faq' },
 ]
 
 function scrollTo(id: string) {
