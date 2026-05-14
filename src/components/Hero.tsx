@@ -1,4 +1,4 @@
-import drLara from '../assets/dr-lara.jpg'
+import drLara from '../assets/dra-lara.webp'
 
 export default function Hero() {
   return (

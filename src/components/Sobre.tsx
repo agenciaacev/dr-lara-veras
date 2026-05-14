@@ -1,5 +1,5 @@
-import drLaraJaleco from '../assets/dr-lara-jaleco.webp'
-import drLaraCirugia from '../assets/dr-lara-cirugia.jpg'
+import drLaraJaleco from '../assets/dra-lara-sobre.webp'
+import drLaraCirugia from '../assets/dra-lara-cirugia.webp'
 
 export default function Sobre() {
   const selos = [
